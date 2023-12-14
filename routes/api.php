@@ -20,4 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+//This is my endpoint. The gateway makes a GET request to this URL
+
 Route::get('/v1/harold-test/ussd',[ussdService::class,'ussdScreens']);
